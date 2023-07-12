@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		156AC3432A5EF07200245F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156AC3422A5EF07200245F9F /* AppDelegate.swift */; };
+		156AC3452A5EF07200245F9F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156AC3442A5EF07200245F9F /* GameViewController.swift */; };
+		156AC3482A5EF07200245F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156AC3462A5EF07200245F9F /* Main.storyboard */; };
+		156AC34B2A5EF07200245F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156AC3492A5EF07200245F9F /* LaunchScreen.storyboard */; };
+		156AC3532A5EF07200245F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156AC3522A5EF07200245F9F /* AppDelegate.swift */; };
+		156AC3552A5EF07200245F9F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156AC3542A5EF07200245F9F /* GameViewController.swift */; };
+		156AC3582A5EF07200245F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156AC3562A5EF07200245F9F /* Main.storyboard */; };
+		156AC35A2A5EF07200245F9F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 156AC3372A5EF07100245F9F /* Actions.sks */; };
+		156AC35B2A5EF07200245F9F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 156AC3372A5EF07100245F9F /* Actions.sks */; };
+		156AC35C2A5EF07200245F9F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 156AC3382A5EF07100245F9F /* GameScene.sks */; };
+		156AC35D2A5EF07200245F9F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 156AC3382A5EF07100245F9F /* GameScene.sks */; };
+		156AC35E2A5EF07200245F9F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156AC3392A5EF07100245F9F /* GameScene.swift */; };
+		156AC35F2A5EF07200245F9F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156AC3392A5EF07100245F9F /* GameScene.swift */; };
+		156AC3602A5EF07200245F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156AC33A2A5EF07200245F9F /* Assets.xcassets */; };
+		156AC3612A5EF07200245F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156AC33A2A5EF07200245F9F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		156AC3372A5EF07100245F9F /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		156AC3382A5EF07100245F9F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		156AC3392A5EF07100245F9F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		156AC33A2A5EF07200245F9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		156AC33F2A5EF07200245F9F /* sinuca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sinuca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		156AC3422A5EF07200245F9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		156AC3442A5EF07200245F9F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		156AC3472A5EF07200245F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		156AC34A2A5EF07200245F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		156AC3502A5EF07200245F9F /* sinuca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sinuca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		156AC3522A5EF07200245F9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		156AC3542A5EF07200245F9F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		156AC3572A5EF07200245F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		156AC3592A5EF07200245F9F /* sinuca_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sinuca_macOS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		156AC33C2A5EF07200245F9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		156AC34D2A5EF07200245F9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		156AC3312A5EF07100245F9F = {
+			isa = PBXGroup;
+			children = (
+				156AC3362A5EF07100245F9F /* sinuca Shared */,
+				156AC3412A5EF07200245F9F /* sinuca iOS */,
+				156AC3512A5EF07200245F9F /* sinuca macOS */,
+				156AC3402A5EF07200245F9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		156AC3362A5EF07100245F9F /* sinuca Shared */ = {
+			isa = PBXGroup;
+			children = (
+				156AC3372A5EF07100245F9F /* Actions.sks */,
+				156AC3382A5EF07100245F9F /* GameScene.sks */,
+				156AC3392A5EF07100245F9F /* GameScene.swift */,
+				156AC33A2A5EF07200245F9F /* Assets.xcassets */,
+			);
+			path = "sinuca Shared";
+			sourceTree = "<group>";
+		};
+		156AC3402A5EF07200245F9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				156AC33F2A5EF07200245F9F /* sinuca.app */,
+				156AC3502A5EF07200245F9F /* sinuca.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		156AC3412A5EF07200245F9F /* sinuca iOS */ = {
+			isa = PBXGroup;
+			children = (
+				156AC3422A5EF07200245F9F /* AppDelegate.swift */,
+				156AC3442A5EF07200245F9F /* GameViewController.swift */,
+				156AC3462A5EF07200245F9F /* Main.storyboard */,
+				156AC3492A5EF07200245F9F /* LaunchScreen.storyboard */,
+			);
+			path = "sinuca iOS";
+			sourceTree = "<group>";
+		};
+		156AC3512A5EF07200245F9F /* sinuca macOS */ = {
+			isa = PBXGroup;
+			children = (
+				156AC3522A5EF07200245F9F /* AppDelegate.swift */,
+				156AC3542A5EF07200245F9F /* GameViewController.swift */,
+				156AC3562A5EF07200245F9F /* Main.storyboard */,
+				156AC3592A5EF07200245F9F /* sinuca_macOS.entitlements */,
+			);
+			path = "sinuca macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		156AC33E2A5EF07200245F9F /* sinuca iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 156AC3642A5EF07200245F9F /* Build configuration list for PBXNativeTarget "sinuca iOS" */;
+			buildPhases = (
+				156AC33B2A5EF07200245F9F /* Sources */,
+				156AC33C2A5EF07200245F9F /* Frameworks */,
+				156AC33D2A5EF07200245F9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sinuca iOS";
+			productName = "sinuca iOS";
+			productReference = 156AC33F2A5EF07200245F9F /* sinuca.app */;
+			productType = "com.apple.product-type.application";
+		};
+		156AC34F2A5EF07200245F9F /* sinuca macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 156AC3672A5EF07200245F9F /* Build configuration list for PBXNativeTarget "sinuca macOS" */;
+			buildPhases = (
+				156AC34C2A5EF07200245F9F /* Sources */,
+				156AC34D2A5EF07200245F9F /* Frameworks */,
+				156AC34E2A5EF07200245F9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sinuca macOS";
+			productName = "sinuca macOS";
+			productReference = 156AC3502A5EF07200245F9F /* sinuca.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		156AC3322A5EF07100245F9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					156AC33E2A5EF07200245F9F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					156AC34F2A5EF07200245F9F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 156AC3352A5EF07100245F9F /* Build configuration list for PBXProject "sinuca" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 156AC3312A5EF07100245F9F;
+			productRefGroup = 156AC3402A5EF07200245F9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				156AC33E2A5EF07200245F9F /* sinuca iOS */,
+				156AC34F2A5EF07200245F9F /* sinuca macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		156AC33D2A5EF07200245F9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156AC35C2A5EF07200245F9F /* GameScene.sks in Resources */,
+				156AC3482A5EF07200245F9F /* Main.storyboard in Resources */,
+				156AC35A2A5EF07200245F9F /* Actions.sks in Resources */,
+				156AC34B2A5EF07200245F9F /* LaunchScreen.storyboard in Resources */,
+				156AC3602A5EF07200245F9F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		156AC34E2A5EF07200245F9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156AC3582A5EF07200245F9F /* Main.storyboard in Resources */,
+				156AC35D2A5EF07200245F9F /* GameScene.sks in Resources */,
+				156AC3612A5EF07200245F9F /* Assets.xcassets in Resources */,
+				156AC35B2A5EF07200245F9F /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		156AC33B2A5EF07200245F9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156AC35E2A5EF07200245F9F /* GameScene.swift in Sources */,
+				156AC3452A5EF07200245F9F /* GameViewController.swift in Sources */,
+				156AC3432A5EF07200245F9F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		156AC34C2A5EF07200245F9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156AC35F2A5EF07200245F9F /* GameScene.swift in Sources */,
+				156AC3552A5EF07200245F9F /* GameViewController.swift in Sources */,
+				156AC3532A5EF07200245F9F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		156AC3462A5EF07200245F9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				156AC3472A5EF07200245F9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		156AC3492A5EF07200245F9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				156AC34A2A5EF07200245F9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		156AC3562A5EF07200245F9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				156AC3572A5EF07200245F9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		156AC3622A5EF07200245F9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		156AC3632A5EF07200245F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		156AC3652A5EF07200245F9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hpbl.sinuca;
+				PRODUCT_NAME = sinuca;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		156AC3662A5EF07200245F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hpbl.sinuca;
+				PRODUCT_NAME = sinuca;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		156AC3682A5EF07200245F9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "sinuca macOS/sinuca_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hpbl.sinuca;
+				PRODUCT_NAME = sinuca;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		156AC3692A5EF07200245F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "sinuca macOS/sinuca_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hpbl.sinuca;
+				PRODUCT_NAME = sinuca;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		156AC3352A5EF07100245F9F /* Build configuration list for PBXProject "sinuca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				156AC3622A5EF07200245F9F /* Debug */,
+				156AC3632A5EF07200245F9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		156AC3642A5EF07200245F9F /* Build configuration list for PBXNativeTarget "sinuca iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				156AC3652A5EF07200245F9F /* Debug */,
+				156AC3662A5EF07200245F9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		156AC3672A5EF07200245F9F /* Build configuration list for PBXNativeTarget "sinuca macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				156AC3682A5EF07200245F9F /* Debug */,
+				156AC3692A5EF07200245F9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 156AC3322A5EF07100245F9F /* Project object */;
+}
