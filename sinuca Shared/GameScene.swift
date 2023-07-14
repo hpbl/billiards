@@ -190,32 +190,32 @@ class GameScene: SKScene {
         let diameter = ballRadius * 2
         self.coloredBalls = [
             //5
-            makeBall(x: -self.table!.frame.width/2 + diameter*1, y: self.table!.frame.midY + diameter*2),
-            makeBall(x: -self.table!.frame.width/2 + diameter*1, y: self.table!.frame.midY + diameter),
-            makeBall(x: -self.table!.frame.width/2 + diameter*1, y: self.table!.frame.midY),
-            makeBall(x: -self.table!.frame.width/2 + diameter*1, y: self.table!.frame.midY - diameter),
-            makeBall(x: -self.table!.frame.width/2 + diameter*1, y: self.table!.frame.midY - diameter*2),
+            makeBall(x: -self.table!.frame.width/2 + diameter*1, y: self.table!.frame.midY + diameter*2, color: "#FFFF00FF"),
+            makeBall(x: -self.table!.frame.width/2 + diameter*1, y: self.table!.frame.midY + diameter, color: "#0000FFFF"),
+            makeBall(x: -self.table!.frame.width/2 + diameter*1, y: self.table!.frame.midY, color: "#FF0000FF"),
+            makeBall(x: -self.table!.frame.width/2 + diameter*1, y: self.table!.frame.midY - diameter, color: "#800080FF"),
+            makeBall(x: -self.table!.frame.width/2 + diameter*1, y: self.table!.frame.midY - diameter*2, color: "#FFA500FF"),
             //4
-            makeBall(x: -self.table!.frame.width/2 + diameter*2, y: self.table!.frame.midY + diameter),
-            makeBall(x: -self.table!.frame.width/2 + diameter*2, y: self.table!.frame.midY + ballRadius),
-            makeBall(x: -self.table!.frame.width/2 + diameter*2, y: self.table!.frame.midY - ballRadius),
-            makeBall(x: -self.table!.frame.width/2 + diameter*2, y: self.table!.frame.midY - diameter),
+            makeBall(x: -self.table!.frame.width/2 + diameter*2, y: self.table!.frame.midY + diameter, color: "#008080FF"),
+            makeBall(x: -self.table!.frame.width/2 + diameter*2, y: self.table!.frame.midY + ballRadius, color: "#A52A2AFF"),
+            makeBall(x: -self.table!.frame.width/2 + diameter*2, y: self.table!.frame.midY - ballRadius, color: "#000000FF"),
+            makeBall(x: -self.table!.frame.width/2 + diameter*2, y: self.table!.frame.midY - diameter, color: "#EFF000FF"),
             //3
-            makeBall(x: -self.table!.frame.width/2 + diameter*3, y: self.table!.frame.midY + ballRadius),
-            makeBall(x: -self.table!.frame.width/2 + diameter*3, y: self.table!.frame.midY),
-            makeBall(x: -self.table!.frame.width/2 + diameter*3, y: self.table!.frame.midY - ballRadius),
+            makeBall(x: -self.table!.frame.width/2 + diameter*3, y: self.table!.frame.midY + ballRadius, color: "#FFC0CBFF"),
+            makeBall(x: -self.table!.frame.width/2 + diameter*3, y: self.table!.frame.midY, color: "#ADD8E6FF"),
+            makeBall(x: -self.table!.frame.width/2 + diameter*3, y: self.table!.frame.midY - ballRadius, color: "#800000FF"),
             //2
-            makeBall(x: -self.table!.frame.width/2 + diameter*4, y: self.table!.frame.midY + ballRadius),
-            makeBall(x: -self.table!.frame.width/2 + diameter*4, y: self.table!.frame.midY - ballRadius),
+            makeBall(x: -self.table!.frame.width/2 + diameter*4, y: self.table!.frame.midY + ballRadius, color: "#CD853FFF"),
+            makeBall(x: -self.table!.frame.width/2 + diameter*4, y: self.table!.frame.midY - ballRadius, color: "#800000FF"),
             //1
-            makeBall(x: -self.table!.frame.width/2 + diameter*5, y: self.table!.frame.midY)
+            makeBall(x: -self.table!.frame.width/2 + diameter*5, y: self.table!.frame.midY, color: "#D3D3D3FF")
         ]
     }
     
-    func makeBall(x: Double, y: Double) -> SKShapeNode {
+    func makeBall(x: Double, y: Double, color: String) -> SKShapeNode {
         let ball = SKShapeNode(circleOfRadius: ballRadius)
-        ball.fillColor = SKColor.init(hex: "#edc98dff")!
-        ball.strokeColor = SKColor.init(hex: "#edc98dff")!
+        ball.fillColor = SKColor.init(hex: color)!
+        ball.strokeColor = SKColor.init(hex: color)!
         ball.physicsBody = SKPhysicsBody(circleOfRadius: ballRadius)
         // by setting contactTestBitMask to the value of collisionBitMask we're saying, "tell me about every collision."
         ball.physicsBody!.contactTestBitMask = ball.physicsBody!.collisionBitMask
