@@ -25,6 +25,12 @@ class GameViewController: NSViewController {
         skView.showsFPS = true
         skView.showsNodeCount = true
     }
-
+    
+    override func viewDidAppear() {
+        let skView = self.view as! SKView
+        skView.window?.acceptsMouseMovedEvents = true
+        skView.window?.initialFirstResponder = skView
+        skView.window?.makeFirstResponder(skView.scene)
+    }
 }
 
